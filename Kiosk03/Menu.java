@@ -73,3 +73,4 @@ public class Menu {
 
 //main은 하나만
 //static -> 하나만 존재하는 영역 여러 쓰레드의 상위개념
+//
