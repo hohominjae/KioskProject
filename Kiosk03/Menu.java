@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class Menu {
 
+
     public void menus() {
         Scanner sc = new Scanner(System.in);
+        ArrayOrder arrayOrder01 = new ArrayOrder(1,"ㅇㅇ",1);
 
         int menu = 99; //메뉴 인덱스
         int menuNum01 = 0; //메뉴의 갯수
@@ -21,6 +23,7 @@ public class Menu {
             menu = Integer.parseInt(sc.nextLine());
             System.out.println("메뉴의 개수를 골라주세요.");
             menuNum01 = Integer.parseInt(sc.nextLine());
+            arrayOrder01.getMenuName(menu);
 
             if (menu == 1) {
                 a = 4300;
@@ -62,6 +65,7 @@ public class Menu {
             } else if (menu == 4) {
                 c = 0;
             }
+
 
             price += (a * menuNum01) + (b * menuNum02) + (c * menuNum03); //왜 ==은 안되지?
             System.out.print("종료하시겠습니까? 0.종료  5.계속\n");
